@@ -1,0 +1,226 @@
+* {
+ font-family: "Inter", sans-serif;
+}
+
+.whatsappbtn{
+border: 1px solid #27AE60;
+padding: 10px 18px;
+color:#27AE60;
+font: 16px;
+}
+
+.whatsappbtn i{
+    color:#27AE60;
+}
+
+.whatsappbtn:hover {
+    border: 1px solid #27AE60;
+    
+}
+
+.call {
+color: white;
+background: linear-gradient(to right, #0acefe, #2699FB);
+}
+
+.bannerContent h1 {
+    font-size: 52px;
+    font-weight: 700;
+    text-align: left;
+    
+}
+
+.bannerContent p{
+    font-size: 22px;
+    text-align: left;
+    margin-top: 20px;
+   
+}
+
+.bannerContent h1 span {
+    color: #2699FB;
+    background:url("../Images/border.png")no-repeat bottom;
+    border-bottom: 5px; 
+    padding-bottom: 8px;
+    
+}
+
+.bannerContent ul{
+    list-style: none;
+    padding: 0px;
+    
+}
+
+.bannerContent ul li{
+    font-size: 22px;
+    
+}
+
+.bannerContent ul li i{
+    color: #2699FB;
+    font-size: 20px;
+    
+}
+.bannerContentBtn button{
+    width: 50%;
+    padding: 10px,0px;
+    border-radius: 0px;
+}
+.bannerContentBtn button:first-child{
+    color: aliceblue;
+    background:linear-gradient(to right,#0ACEFE,#2699FB);
+}
+
+.bannerForm{
+    padding: 40px;
+    border-radius: 10px;
+}
+.bannerForm h3{
+    font-size: 18px;
+    font-weight: 700;
+}
+.bannerForm button{
+    width: 100%;
+    padding: 10px,0px;
+    border: none;
+    color: aliceblue;
+    background:linear-gradient(to right,#0ACEFE,#2699FB);
+}
+.counterSection h2{
+    font-size: 30px;
+    font-weight: 700;
+    color: #2699FB;
+}
+
+.highlights-section{
+background-color: #F7FAFF;
+}
+.highlights-section h2{
+    color: #0A2134;
+    font-size: 36px;
+    font-weight: 700;
+} 
+
+.highlights-section p{
+    font-size: 18px;
+    
+}
+
+.highlightsItems h4{
+    font-size: 20px;
+    font-weight: 600;
+
+}
+.highlightsItems p{
+    font-size: 15px;
+}
+.bookBtn button{
+    color: aliceblue;
+    background:linear-gradient(to right,#0ACEFE,#2699FB);
+    border: 1px solid #0ACEFE;
+    padding: 10px 20px;
+}
+
+.options-section {
+    padding-top: 50px; 
+    padding-bottom: 50px; 
+}
+.options-section .optionsItems {
+    background-color: white; /* Make the card background white */
+    border-radius: 10px; /* Add rounded corners */
+    padding: 20px; /* Add padding inside the card */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    height: 100%; /* Ensure all items have equal height for alignment */
+}
+.certificationItems{
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+}
+.bkBtn button{
+    color: aliceblue;
+    background:linear-gradient(to right,#0ACEFE,#2699FB);
+    padding: 10px 20px;
+    border: 1px solid #0ACEFE;
+}
+
+.certificate-image-container img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 0;
+}
+.certificate-image-container {
+  padding-right: 20px;
+  padding-top: 10px;
+}
+.tabContentItems ul{
+list-style: none;
+}
+.tabMySystem .nav-pills {
+    justify-content: center;
+}
+
+.tabMySystem .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+    background-color: #F2F4F7;
+    color: #0A2134;
+    border-radius: 0px;
+    border-bottom: 2px solid blue;
+}
+.dcBtn button{
+    color: aliceblue;
+    background:linear-gradient(to right,#0ACEFE,#2699FB);
+    padding: 10px 20px;
+    border: 1px solid #0ACEFE;
+}
+.quoteImg{
+    padding: 30px;
+    max-width: 100%;
+    height: auto;
+}
+
+.digitalOverlayContainer {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.digitalOverlayContainer img {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+.overlayContent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+.overlayContent button {
+    background: white;
+    color: #000;
+    font-weight: 700;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.overlayContent h3 {
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+.overlayContent p {
+    margin-top: 10px;
+    font-size: 1rem;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}

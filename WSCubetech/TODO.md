@@ -1,0 +1,2 @@
+- [x] Add CSS to center the tablist nav-pills in style.css
+- [ ] Test the centering by opening the page in browser

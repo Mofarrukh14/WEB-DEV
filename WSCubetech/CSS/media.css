@@ -1,0 +1,45 @@
+@media only screen and (min-width: 200px) and (max-width: 575px) {
+    
+    .btn-outer{
+        position: fixed;
+        bottom: 0px;
+        width: 100%;
+        background-color: white;
+        padding: 5px,0px;
+        left: 0px;
+        justify-content: center !important;
+    }
+}
+
+.whatsappbtn, .call {
+    padding: 7px,15px;
+    font-size: 14px;
+}
+    
+.bannerContent h1 {
+    font-size: 28px;
+    font-weight: 700;  
+    line-height: 35px;
+    
+}
+
+.bannerContent p,.bannerContent ul li i {
+    font-size: 16px;
+    text-align: left;
+    
+}
+
+.bannerForm{
+padding: 20px;
+}
+
+.highlights-section h2{
+    font-size: 28px;
+    
+} 
+
+@media (min-width: 1400px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl {
+        max-width: 1170px;
+    }
+}
