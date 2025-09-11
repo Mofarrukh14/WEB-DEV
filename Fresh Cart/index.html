@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FreshMart</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-left">
+        <div class="logo">FreshMart</div>
+        <div class="nav-links">
+          <a href="#" class="home">Home</a>
+          <a href="#">Shop</a>
+          <a href="#">Categories</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+      <div class="navbar-right">
+        <div class="search-container">
+          <input type="text" placeholder="Search" />
+          <img src="images/Navbar/search.png" alt="Search Icon" />
+        </div>
+        <div class="cart-container" id="cart-icon">
+          <img src="images/Navbar/shopping-cart.png" alt="Cart Icon" />
+          <div class="cart-badge" id="cart-badge">0</div>
+        </div>
+      </div>
+    </nav>
+
+    <header class="header-container">
+      <img
+        src="images/Header/h1.jpg"
+        alt="Fresh & Healthy"
+        class="header-image"
+      />
+      <div class="header-text">Fresh &amp; Healthy</div>
+      <button class="shop-now-btn" id="shop-now-btn">Shop Now</button>
+    </header>
+
+    <section class="categories-container">
+      <h2 class="categories-title">Top Categories</h2>
+      <div class="categories-items">
+        <div class="category-item">
+          <img src="images/Categories/fv.jpg" alt="Fresh Vegetables" />
+          <p>Fresh Vegetables</p>
+          <button class="see-more-btn" data-category="vegetables">
+            See More
+          </button>
+        </div>
+        <div class="category-item">
+          <img src="images/Categories/ff.jpg" alt="Fresh Fruits" />
+          <p>Fresh Fruits</p>
+          <button class="see-more-btn" data-category="fruits">See More</button>
+        </div>
+        <div class="category-item">
+          <img src="images/Categories/df.jpg" alt="Dry Fruits" />
+          <p>Dry Fruits</p>
+          <button class="see-more-btn" data-category="dry-fruits">
+            See More
+          </button>
+        </div>
+        <div class="category-item">
+          <img src="images/Categories/fc.jpg" alt="Fresh Chicken" />
+          <p>Fresh Chicken</p>
+          <button class="see-more-btn" data-category="chicken">
+            See More
+          </button>
+        </div>
+        <div class="category-item">
+          <img src="images/Categories/fm.jpg" alt="Fresh Meat" />
+          <p>Fresh Meat</p>
+          <button class="see-more-btn" data-category="meat">See More</button>
+        </div>
+        <div class="category-item">
+          <img src="images/Categories/fb.jpg" alt="Fresh Beef" />
+          <p>Fresh Beef</p>
+          <button class="see-more-btn" data-category="beef">See More</button>
+        </div>
+        <div class="category-item">
+          <img src="images/Categories/d.jpg" alt="Dairy" />
+          <p>Dairy</p>
+          <button class="see-more-btn" data-category="dairy">See More</button>
+        </div>
+        <div class="category-item">
+          <img src="images/Categories/s.jpg" alt="Snacks" />
+          <p>Snacks</p>
+          <button class="see-more-btn" data-category="snacks">See More</button>
+        </div>
+      </div>
+    </section>
+
+    <div class="start-shopping-container">
+      <img src="images/Humans/group.jpg" alt="Start Shopping" class="start-shopping-image" />
+      <button class="start-shopping-btn">Start Shopping</button>
+    </div>
+
+    <section class="organic-boxes-container" id="organic-boxes-container">
+      <h2 class="organic-boxes-title">Organic Boxes</h2>
+      <div class="organic-boxes-items">
+        <!-- Organic Fruits -->
+        <div class="organic-box-item">
+          <div class="organic-image">
+            <img src="images/Items/1.jpg" alt="Organic Fruits" />
+          </div>
+          <button class="add-to-cart-btn" data-item="fruits">Add To Cart</button>
+          <div class="item-info-row">
+            <div class="item-info-left">
+              <div class="organic-heading">organic fruits</div>
+              <div class="organic-description">
+                This box contains everything you'll need to make a delicious glass of
+                fresh juice.
+              </div>
+            </div>
+            <div class="item-info-right">
+              <div class="item-price" data-base-price="4.00">$04.00/ Box</div>
+              <div class="quantity-controls-container">
+                <div class="quantity-controls">
+                  <button class="quantity-btn minus-btn">-</button>
+                  <span class="quantity-value">1</span>
+                  <button class="quantity-btn plus-btn">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Organic Veggie -->
+        <div class="organic-box-item">
+          <div class="organic-image">
+            <img src="images/Items/2.jpg" alt="Organic Veggie" />
+          </div>
+          <button class="add-to-cart-btn" data-item="veggie">Add To Cart</button>
+          <div class="item-info-row">
+            <div class="item-info-left">
+              <div class="organic-heading">organic veggie</div>
+              <div class="organic-description">
+                Fresh organic vegetables for healthy meals and salads.
+              </div>
+            </div>
+            <div class="item-info-right">
+              <div class="item-price" data-base-price="2.00">$02.00/ Box</div>
+              <div class="quantity-controls-container">
+                <div class="quantity-controls">
+                  <button class="quantity-btn minus-btn">-</button>
+                  <span class="quantity-value">1</span>
+                  <button class="quantity-btn plus-btn">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Organic Dry Fruits -->
+        <div class="organic-box-item">
+          <div class="organic-image">
+            <img src="images/Items/3.jpg" alt="Organic Dry Fruits" />
+          </div>
+          <button class="add-to-cart-btn" data-item="dryfruits">Add To Cart</button>
+          <div class="item-info-row">
+            <div class="item-info-left">
+              <div class="organic-heading">organic dry fruits</div>
+              <div class="organic-description">
+                Premium dry fruits for snacking and baking.
+              </div>
+            </div>
+            <div class="item-info-right">
+              <div class="item-price" data-base-price="5.00">$05.00/ Box</div>
+              <div class="quantity-controls-container">
+                <div class="quantity-controls">
+                  <button class="quantity-btn minus-btn">-</button>
+                  <span class="quantity-value">1</span>
+                  <button class="quantity-btn plus-btn">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Seafood -->
+        <div class="organic-box-item">
+          <div class="organic-image">
+            <img src="images/Items/4.jpg" alt="Seafood" />
+          </div>
+          <button class="add-to-cart-btn" data-item="seafood">Add To Cart</button>
+          <div class="item-info-row">
+            <div class="item-info-left">
+              <div class="organic-heading">seafood</div>
+              <div class="organic-description">
+                Fresh seafood for delicious and healthy dishes.
+              </div>
+            </div>
+            <div class="item-info-right">
+              <div class="item-price" data-base-price="8.00">$08.00/ Box</div>
+              <div class="quantity-controls-container">
+                <div class="quantity-controls">
+                  <button class="quantity-btn minus-btn">-</button>
+                  <span class="quantity-value">1</span>
+                  <button class="quantity-btn plus-btn">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Dairy -->
+        <div class="organic-box-item">
+          <div class="organic-image">
+            <img src="images/Items/5.jpg" alt="Dairy" />
+          </div>
+          <button class="add-to-cart-btn" data-item="dairy">Add To Cart</button>
+          <div class="item-info-row">
+            <div class="item-info-left">
+              <div class="organic-heading">dairy</div>
+              <div class="organic-description">
+                Creamy, fresh, and full of goodness – dairy essentials for your everyday life.
+              </div>
+            </div>
+            <div class="item-info-right">
+              <div class="item-price" data-base-price="3.00">$03.00/ Box</div>
+              <div class="quantity-controls-container">
+                <div class="quantity-controls">
+                  <button class="quantity-btn minus-btn">-</button>
+                  <span class="quantity-value">1</span>
+                  <button class="quantity-btn plus-btn">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Snacks -->
+        <div class="organic-box-item">
+          <div class="organic-image">
+            <img src="images/Items/6.jpg" alt="Snacks" />
+          </div>
+          <button class="add-to-cart-btn" data-item="snacks">Add To Cart</button>
+          <div class="item-info-row">
+            <div class="item-info-left">
+              <div class="organic-heading">snacks</div>
+              <div class="organic-description">
+                Tasty organic snacks for every occasion.
+              </div>
+            </div>
+            <div class="item-info-right">
+              <div class="item-price" data-base-price="3.00">$03.00/ Box</div>
+              <div class="quantity-controls-container">
+                <div class="quantity-controls">
+                  <button class="quantity-btn minus-btn">-</button>
+                  <span class="quantity-value">1</span>
+                  <button class="quantity-btn plus-btn">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Bakery -->
+        <div class="organic-box-item">
+          <div class="organic-image">
+            <img src="images/Items/7.webp" alt="Bakery" />
+          </div>
+          <button class="add-to-cart-btn" data-item="bakery">Add To Cart</button>
+          <div class="item-info-row">
+            <div class="item-info-left">
+              <div class="organic-heading">bakery</div>
+              <div class="organic-description">
+                Freshly baked organic breads and pastries.
+              </div>
+            </div>
+            <div class="item-info-right">
+              <div class="item-price" data-base-price="6.00">$06.00/ Box</div>
+              <div class="quantity-controls-container">
+                <div class="quantity-controls">
+                  <button class="quantity-btn minus-btn">-</button>
+                  <span class="quantity-value">1</span>
+                  <button class="quantity-btn plus-btn">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Organic Meat -->
+        <div class="organic-box-item">
+          <div class="organic-image">
+            <img src="images/Items/8.jpg" alt="Organic Meat" />
+          </div>
+          <button class="add-to-cart-btn" data-item="meat">Add To Cart</button>
+          <div class="item-info-row">
+            <div class="item-info-left">
+              <div class="organic-heading">organic meat</div>
+              <div class="organic-description">
+                Premium organic meat for healthy meals.
+              </div>
+            </div>
+            <div class="item-info-right">
+              <div class="item-price" data-base-price="6.00">$06.00/ Box</div>
+              <div class="quantity-controls-container">
+                <div class="quantity-controls">
+                  <button class="quantity-btn minus-btn">-</button>
+                  <span class="quantity-value">1</span>
+                  <button class="quantity-btn plus-btn">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Organic Beef -->
+        <div class="organic-box-item">
+          <div class="organic-image">
+            <img src="images/Items/9.jpg" alt="Organic Beef" />
+          </div>
+          <button class="add-to-cart-btn" data-item="beef">Add To Cart</button>
+          <div class="item-info-row">
+            <div class="item-info-left">
+              <div class="organic-heading">Organic Beef</div>
+              <div class="organic-description">
+                Premium organic Beef for Tasty meals.
+              </div>
+            </div>
+            <div class="item-info-right">
+              <div class="item-price" data-base-price="6.00">$06.00/ Box</div>
+              <div class="quantity-controls-container">
+                <div class="quantity-controls">
+                  <button class="quantity-btn minus-btn">-</button>
+                  <span class="quantity-value">1</span>
+                  <button class="quantity-btn plus-btn">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="feedback-section">
+      <button class="view-all-btn">View All</button>
+      <h3 class="feedback-subheader">Customers Feedback</h3>
+      <div class="customer-feedback-cards">
+        <div class="customer-card">
+          <img src="images/Customers/f1.jpg" alt="Sarah Khan" class="customer-img" />
+          <div class="customer-name">Sarah Khan</div>
+          <div class="customer-review">
+            The fruits are so fresh and delivery is always on time. Highly recommended!
+          </div>
+          <div class="customer-stars">★★★★★</div>
+        </div>
+        <div class="customer-card">
+          <img src="images/Customers/m1.jpg" alt="Ali Raza" class="customer-img" />
+          <div class="customer-name">Ali Raza</div>
+          <div class="customer-review">
+            I love the bakery section the breads are soft and taste amazing
+          </div>
+          <div class="customer-stars">★★★★☆</div>
+        </div>
+        <div class="customer-card">
+          <img src="images/Customers/f2.jpg" alt="Sofia" class="customer-img" />
+          <div class="customer-name">Sofia</div>
+          <div class="customer-review">
+            The dairy products are fresh and affordable. Great service!
+          </div>
+          <div class="customer-stars">★★★★★</div>
+        </div>
+        <div class="customer-card">
+          <img src="images/Customers/m2.jpg" alt="Ali" class="customer-img" />
+          <div class="customer-name">Ali</div>
+          <div class="customer-review">
+            The dairy products are fresh and affordable. Great service!
+          </div>
+          <div class="customer-stars">★★★★☆</div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      © 2025 FreshMart. All rights reserved
+    </footer>
+
+    <div class="cart-popup" id="cart-popup">
+      <div class="cart-popup-header">Your Cart</div>
+      <div class="cart-popup-items" id="cart-popup-items">
+        <!-- Cart items will be injected here -->
+      </div>
+      <div class="cart-popup-total" id="cart-popup-total">
+        Total : $0.00
+      </div>
+      <button class="cart-popup-checkout-btn">Checkout</button>
+      <div class="thank-you-message" id="thank-you-message" style="display:none; text-align:center;">
+        <h2 style="color:#349800;">Thank You for checking out!</h2>
+        <p>Your items are on the way!</p>
+        <div class="truck-animation">
+          <img src="images/Delivery Icon/delivery.png" alt="Green Truck" style="width:120px;"/>
+        </div>
+      </div>
+    </div>
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
