@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="main">
+        <form class="form1">
+            <h1>Create Account</h1>
+            <input type="text" name="" placeholder="E-mail">
+            <br>
+            <input type="password" name="" placeholder="Password">
+            <br>
+            <input type="password" name="" placeholder="Confirm Password">
+            <div class="btns">
+            <button type="button" onclick="nextToForm2()">Next</button>
+            </div>
+        </form>
+        <form class="form2">
+            <h1>Personal Details</h1>
+            <input type="text" name="" placeholder="First Name">
+            <br>
+            <input type="text" name="" placeholder="Last Name">
+            <br>
+            <input type="text" name="" placeholder="Mobile No.">
+            <div class="btns">
+            <button type="button" onclick="prevToForm1()">Prev</button>
+            <button type="button" onclick="nextToForm3()">Next</button>
+            </div>
+        </form>
+        <form class="form3">
+            <h1>Social Links</h1>
+            <input type="text" name="" placeholder="LinkedIn">
+            <br>
+            <input type="text" name="" placeholder="Github">
+            <br>
+            <input type="text" name="" placeholder="Medium">
+            <div class="btns">
+            <button type="button" onclick="prevToForm2()">Prev</button>
+            <button type="button">Submit</button>
+            </div>
+        </form>
+        <div class="progress">
+            <div class="progressBar"></div>
+            <div class="steps">Step 1</div>
+            <div class="steps">Step 2</div>
+            <div class="steps">Step 3</div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript">
+    const forms = document.querySelectorAll('form');
+    let progressBar = document.querySelector('.progressBar');
+
+    const nextToForm2 = () =>{
+        forms[0].style.left = '-100%';
+        forms[1].style.left = '0';
+        progressBar.style.width = '66%';   
+    }
+    const prevToForm1 = () =>{
+        forms[0].style.left = '0';
+        forms[1].style.left = '100%';
+        progressBar.style.width = '33%';    
+    }
+    const nextToForm3 = () =>{
+        forms[2].style.left = '0';
+        forms[1].style.left = '-100%';
+        progressBar.style.width = '100%';    
+    }
+    const prevToForm2 = () =>{
+        forms[2].style.left = '100%';
+        forms[1].style.left = '0';
+        progressBar.style.width = '66%';  
+    }
+</script>
+</html>
