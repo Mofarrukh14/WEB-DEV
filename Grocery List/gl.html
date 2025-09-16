@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery List</title>
+    <link rel="stylesheet" href="gl.css">
+    <script src="gl.js" defer></script>
+</head>
+<body>
+    <div class="main">
+        <h1>Grocery List</h1>
+        <div class="inpDiv">
+            <div class="inner">
+                <input type="text" id="userInp" name="" placeholder="Add an item...">
+                <button id="addBtn" class="themeBtn">Add Item</button>
+            </div>
+            <div class="inner">
+            <button class="deleteBtn">Delete All Items</button>
+            <button class="deleteBtn">Delete Checked Items</button>
+        </div>
+    </div>
+    <div class="listDiv">
+        <ul>
+            <li>
+                <input type="checkbox" name="">
+                <span>Item</span>
+                <button>Delete</button>
+            </li>
+        </ul>
+    </div>
+    <div class="btnDiv">
+        <button class="themeBtn">All Items - 0</button>
+        <button class="themeBtn">All Purchased - 0</button>
+        <button class="themeBtn">All Remaining - 0</button>
+    </div>
+</body>
+</html>
